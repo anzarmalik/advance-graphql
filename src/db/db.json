@@ -17,6 +17,15 @@
       "avatar": "http",
       "createdAt": 1630351120260,
       "id": "4inJObR3NrMyv6y5SgYkZ"
+    },
+    {
+      "email": "member@gmail.com",
+      "password": "abcdef",
+      "role": "MEMBER",
+      "verified": false,
+      "avatar": "http",
+      "createdAt": 1630438040528,
+      "id": "z_dUX3YHrwKqNExyfV7Uc"
     }
   ],
   "posts": [],

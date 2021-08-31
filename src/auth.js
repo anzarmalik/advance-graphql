@@ -31,7 +31,11 @@ const getUserFromToken = token => {
  * @param {Function} next next resolver function ro run
  */
 const authenticated = next => (root, args, context, info) => {
-  throw new Error("something is   going on... ");
+  if(!context.user){
+  throw new Error(" Not Authenticated (: ");
+  }
+
+  return next(root, args, context, info);
 }
 
 /**
@@ -41,7 +45,11 @@ const authenticated = next => (root, args, context, info) => {
  * @param {Function} next next resolver function to run
  */
 const authorized = (role, next) => (root, args, context, info) => {
-  
+  if(context.user.role !== role){
+    throw new Error(" Not Authorized :) ");
+  }
+
+  return next(root, args, context, info);
 }
 
 module.exports = {
