@@ -1,7 +1,7 @@
 {
   "name": "advance-graphql",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "./src/index.js",
   "author": "Anzar",
   "license": "MIT",
   "scripts": {

@@ -31,7 +31,7 @@ const getUserFromToken = token => {
  * @param {Function} next next resolver function ro run
  */
 const authenticated = next => (root, args, context, info) => {
-  
+  throw new Error("something is   going on... ");
 }
 
 /**
